@@ -11,15 +11,16 @@ def ver_asientos():
             print('')
         c=c+1
 def comprar_asientos():
-    num=input('ingrese numero de asiento')
+    num=input('Ingrese numero de asiento: ')
     if num in a:
         i=int(num)-1
         a[i]='X'
     else:
-        print('asiento ocupado o inexistente')
+        print('Asiento ocupado o inexistente')
 
 def menu():
-    os.system('cls')
+    #os.system('cls')
+    os.system('clear')
     print('MENU')
     print('1- VER ASIENTOS')
     print('2- Comprar Asientos')
@@ -29,5 +30,10 @@ def menu():
     return input('Ingrese una Opcion: ')
 
 while True:
-    ops
-    if 
+    ops=menu()
+    if ops=='1':
+        ver_asientos()
+    if ops=='2':
+        comprar_asientos()
+input('')
+
